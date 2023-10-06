@@ -32,9 +32,6 @@ jobs:
           echo "GITHUB_SHA: ${{ github.sha }}"
           echo "GITHUB_REF: ${{ github.ref }}"
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x './project.json'    
-
 
   build-uipath-nuget-package:
     # You should be able to run on windows 2019 or windows latest
